@@ -20,7 +20,7 @@ while True:
                 dq.append((i,j))
                 cnt +=1
                 while dq:
-                    x,y = dq.pop()
+                    x,y = dq.popleft()
                     arr[x][y] = 0
                     for k in range(len(dx)):
                         nx = x+dx[k]
@@ -33,6 +33,6 @@ while True:
 
 
 # BFS로 탐색해서 군집갯수 찾기
-# DFS였다면 popleft()
+# DFS였다면 pop()
 
 
